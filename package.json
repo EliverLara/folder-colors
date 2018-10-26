@@ -1,0 +1,22 @@
+{
+  "name": "folder-colors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node --experimental-modules index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "clean-slate-lint": "^1.0.9"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "./node_modules/.bin/clean-slate-lint",
+      "pre-rewrite": "./node_modules/.bin/clean-slate-lint"
+    }
+  }
+}
